@@ -1,15 +1,27 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Swal from 'sweetalert2'
+
 
 const Option = ({optio , opb , all}) => {
-   
+    const [as , setAs]= useState();
+
+//    console.log(all.correctAnswer);
 
     const chackAns =(al ,option)=>{
         const ans = al.correctAnswer;
-        console.log('ans' ,ans);
-        if(option == ans){
-            console.log('true')
+            setAs(ans)
+        if(option === ans){
+            Swal.fire(
+                'Good job!',
+                'You clicked the button!',
+                'success'
+              )
         }else{
-            console.log('falce');
+            Swal.fire({
+                icon: 'error',
+                text: 'Something went wrong!',
+                
+              })
         }
     }
 

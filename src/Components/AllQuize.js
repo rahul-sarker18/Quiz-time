@@ -1,14 +1,27 @@
 import { useState } from "react";
 import Option from "./Option";
+import Swal from 'sweetalert2'
 
 const AllQuize = ({ all }) => {
-  const { question, options, correctAnswer } = all;
-  const [open, setOpen] = useState(false);
-  // console.log(correctAnswer);
 
-  // const splite =question.split('<p>')
-  // const next =splite.pop('</p>')
-  // console.log(splite);
+  const { question, options ,correctAnswer} = all;
+  const [open, setOpen] = useState(correctAnswer);
+
+
+  const hellow =()=>{
+    console.log(open);
+    Swal.fire({
+      title: open,
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+    // alert(open)
+  }
+
 
   return (
     <div className="bg-slate-200 p-6 m-10 w-3/5 mx-auto">
@@ -16,12 +29,16 @@ const AllQuize = ({ all }) => {
         <div>{question}</div>
 
 
-        <div onClick={() => setOpen(!open)}>
+        {/* <div onClick={() => setOpen(!open)}>
           {open ? (
             <i class="fa-solid fa-unlock"></i>
           ) : (
             <i class="fa-solid fa-lock"></i>
           )}
+
+        </div> */}
+        <div>
+        <i onClick={hellow} class="fa-solid fa-eye" ></i>
         </div>
 
       </div>
