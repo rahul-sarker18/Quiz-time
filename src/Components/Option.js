@@ -6,7 +6,11 @@ const Option = ({optio , opb , all}) => {
     const chackAns =(al ,option)=>{
         const ans = al.correctAnswer;
         console.log('ans' ,ans);
-        
+        if(option == ans){
+            console.log('true')
+        }else{
+            console.log('falce');
+        }
     }
 
 

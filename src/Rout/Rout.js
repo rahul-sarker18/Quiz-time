@@ -7,9 +7,11 @@ import About from "../Components/About";
 import Cheart from "../Components/Cheart";
 import Eroor from "../Components/Eroor";
 
+
 export const router = createBrowserRouter([
     {path:'/' ,
     element: <Layout></Layout> ,
+    errorElement:<Eroor></Eroor> ,
     loader: async()=> fetch('https://openapi.programming-hero.com/api/quiz') ,
     children: [
         {path:'/' ,element:<Home></Home>},
@@ -20,5 +22,4 @@ export const router = createBrowserRouter([
         {path:'blog', element:<About></About>},
         
     ]},
-    {path:'*', element:<Eroor></Eroor>}
 ])
