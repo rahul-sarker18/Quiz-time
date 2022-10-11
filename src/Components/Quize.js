@@ -5,6 +5,7 @@ import AllQuize from './AllQuize';
 const Quize = () => {
   const lod = useLoaderData()
   const Qzall =lod.data.questions;
+  
   return (
     <div>
       {
