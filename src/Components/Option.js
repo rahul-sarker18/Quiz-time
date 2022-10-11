@@ -13,13 +13,13 @@ const Option = ({optio , opb , all}) => {
         if(option === ans){
             Swal.fire(
                 'Good job!',
-                'You clicked the button!',
+                'Correct answer',
                 'success'
               )
         }else{
             Swal.fire({
                 icon: 'error',
-                text: 'Something went wrong!',
+                text: 'You are wrong!',
                 
               })
         }
@@ -34,8 +34,10 @@ const Option = ({optio , opb , all}) => {
           onClick={() => chackAns(all, optio)}
           className={`bg-slate-800 text-yellow-50 p-3 flex my-2  gap-2`}
         >
-          <input type="checkbox"></input>
+          <input type="checkbox"> </input>
           <h1>{optio}</h1>
+
+          
         </div>
       </div>
     );
