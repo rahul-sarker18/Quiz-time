@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const QzItem = ({ item }) => {
   //   console.log(item);
-  const { logo, name, total, id } = item;
+  const { logo, name, id } = item;
   return (
     <div>
       <div className="max-w-xs rounded-md shadow-md dark:bg-gray-900 dark:text-gray-100 mt-5">

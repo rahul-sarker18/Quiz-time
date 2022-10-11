@@ -12,12 +12,12 @@ const Home = () => {
         <div className="container flex flex-col justify-center p-6 mx-auto sm:py-12 lg:py-24 lg:flex-row lg:justify-between">
           <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
             <h1 className="text-5xl font-bold leading-none sm:text-6xl">
-              Ac mattis
-              <span className="dark:text-violet-400">senectus</span>erat
-              pharetra
+            Hi.. 
+              <span className="dark:text-violet-400">welcome</span>
+               to quiz time
             </h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12">
-              Dictum aliquam porta in condimentum ac integer
+            Made for the purpose of learning something new
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <Link
@@ -51,7 +51,7 @@ const Home = () => {
       {/* quiz manu lode */}
 
       <div>
-        <div className="grid xl:grid-cols-4 mx-auto w-5/6 gap-6">
+        <div className="grid xxl:grid-cols-4 xl:grid-cols-4 lg:grid-cols-2 md:grid-cols-2  mx-auto w-5/6 gap-6">
           {quzemanu.map((qz) => (
             <QzItem key={qz.id} item={qz}></QzItem>
           ))}

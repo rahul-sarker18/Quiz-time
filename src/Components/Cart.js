@@ -10,7 +10,7 @@ const Cart = () => {
 
  
   return (
-    <div className="grid xl:grid-cols-4 mx-auto w-5/6 gap-6">
+    <div className="grid xxl:grid-cols-4 xl:grid-cols-4  lg:grid-cols-2 md:grid-cols-2 mx-auto w-5/6 gap-6">
      {
       quzemanu.map(qz => <QzItem key={qz.id} item = {qz}></QzItem>)
      }

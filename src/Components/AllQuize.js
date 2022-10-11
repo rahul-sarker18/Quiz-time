@@ -28,22 +28,13 @@ const AllQuize = ({ all }) => {
       <div className="flex gap-3 justify-between">
         <div>{question}</div>
 
-
-        {/* <div onClick={() => setOpen(!open)}>
-          {open ? (
-            <i class="fa-solid fa-unlock"></i>
-          ) : (
-            <i class="fa-solid fa-lock"></i>
-          )}
-
-        </div> */}
         <div>
         <i onClick={hellow} class="fa-solid fa-eye" ></i>
         </div>
 
       </div>
 
-      <div className="grid grid-cols-2 gap-5 mt-6">
+      <div className="grid xxl:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:block gap-5 mt-6">
         {options.map((op) => (
           <Option opb={open} all={all} optio={op}></Option>
         ))}

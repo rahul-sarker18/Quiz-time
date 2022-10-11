@@ -38,7 +38,7 @@ const Cheart = () => {
   ];
 
   return (
-    <div className="mx-auto w-1/2 my-28 py-10">
+    <div className="mx-auto md:w-3/4 lg:w-3/5 xl:w-1/2 xxl:w-1/2 my-28 py-10">
       <ComposedChart width={500} height={250} data={data}>
         <XAxis dataKey="name" />
         <YAxis />
