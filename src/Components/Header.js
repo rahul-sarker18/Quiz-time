@@ -19,7 +19,7 @@ const Header = () => {
               <p className="flex items-center px-3 -mb-1 border-b-2 dark:border-transparent">
               <NavLink
                to='/home'
-                className={({isActive})=> isActive ? 'bg-slate-600 p-4' : undefined}
+                className={({isActive})=> isActive ? 'bg-slate-600 p-4 rounded-lg' : undefined}
               >
                 Home
               </NavLink>
@@ -31,7 +31,7 @@ const Header = () => {
             <p className="flex items-center px-3 -mb-1 border-b-2 dark:border-transparent">
               <NavLink
                to='/cart'
-                className={({isActive})=> isActive ? 'bg-slate-600 p-4 ' : undefined}
+                className={({isActive})=> isActive ? 'bg-slate-600 p-4 rounded-lg' : undefined}
               >
                 Quize
               </NavLink>
@@ -41,8 +41,8 @@ const Header = () => {
             <li className="flex">
             <p className="flex items-center px-3 -mb-1 border-b-2 dark:border-transparent">
               <NavLink
-               to='/addedproduct'
-                className={({isActive})=> isActive ? 'bg-slate-600 p-4' : undefined}
+               to='/rechart'
+                className={({isActive})=> isActive ? 'bg-slate-600 p-4 rounded-lg' : undefined}
               >
                 Chart
               </NavLink>
@@ -52,8 +52,8 @@ const Header = () => {
             <li className="flex">
             <p className="flex items-center px-3 -mb-1 border-b-2 dark:border-transparent">
               <NavLink
-               to='/about'
-                className={({isActive})=> isActive ? 'bg-slate-600 p-4' : undefined}
+               to='/blog'
+                className={({isActive})=> isActive ? 'bg-slate-600 p-4 rounded-lg' : undefined}
               >
                 Blog
               </NavLink>

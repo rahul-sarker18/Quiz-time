@@ -1,18 +1,19 @@
-import React from "react";
-import { Outlet} from "react-router-dom";
+import React, { createContext } from "react";
+import { Outlet, useLoaderData } from "react-router-dom";
+import Footer from "../Components/Footer";
 import Header from "../Components/Header";
 
-
-
+export const Myapi = createContext([]);
 const Layout = () => {
-
+  const apilode = useLoaderData();
 
   return (
     <div>
-      
-          <Header></Header>
-          <Outlet></Outlet>
-        
+      <Myapi.Provider value={apilode}>
+        <Header></Header>
+        <Outlet></Outlet>
+        <Footer></Footer>
+      </Myapi.Provider>
     </div>
   );
 };
