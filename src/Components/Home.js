@@ -6,7 +6,6 @@ import QzItem from "./QzItem";
 const Home = () => {
   const lodeApi = useContext(Myapi);
   const quzemanu = lodeApi.data;
-  console.log(quzemanu);
   return (
     <div>
       <section className="dark:bg-gray-800 dark:text-gray-100 my-16">
