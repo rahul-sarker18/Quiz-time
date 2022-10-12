@@ -3,7 +3,7 @@
 
 website anme:  (Quiz time)
 
-netlify link::--         https://benevolent-gelato-738075.netlify.app/blog
+netlify link::--         https://benevolent-gelato-738075.netlify.app/
 
 '' website  feacher ''
 1. There is a rechart on the website.
