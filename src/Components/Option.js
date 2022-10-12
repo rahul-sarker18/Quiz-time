@@ -22,15 +22,13 @@ const Option = ({optio , opb , all}) => {
     }
 
 
-
-
     return (
       <div>
         <div
           onClick={() => chackAns(all, optio)}
           className={`bg-slate-800 text-yellow-50 p-3 flex my-2  gap-2`}
         >
-          <input type="checkbox"/> 
+          <input  type="checkbox"/> 
           <h1>{optio}</h1>
 
           

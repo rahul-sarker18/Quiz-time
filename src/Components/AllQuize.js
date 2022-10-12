@@ -32,7 +32,7 @@ const AllQuize = ({ all }) => {
 
       <div className="grid xxl:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:block gap-5 mt-6">
         {options.map((op) => (
-          <Option opb={open} all={all} optio={op}></Option>
+          <Option key={op} opb={open} all={all} optio={op}></Option>
         ))}
       </div>
     </div>
