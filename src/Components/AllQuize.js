@@ -5,7 +5,7 @@ import Swal from 'sweetalert2'
 const AllQuize = ({ all }) => {
 
   const { question, options ,correctAnswer} = all;
-  const [open, setOpen] = useState(correctAnswer);
+  const [open] = useState(correctAnswer);
 
   const hellow = () => {
     console.log(open);
