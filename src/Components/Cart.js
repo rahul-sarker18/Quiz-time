@@ -2,8 +2,6 @@ import React, { useContext } from "react";
 import { Myapi } from "../Layout/Layout";
 import QzItem from "./QzItem";
 
-
-
 const Cart = () => {
   const lodeApi = useContext(Myapi);
  const quzemanu = lodeApi.data;

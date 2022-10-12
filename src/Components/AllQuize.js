@@ -7,21 +7,18 @@ const AllQuize = ({ all }) => {
   const { question, options ,correctAnswer} = all;
   const [open, setOpen] = useState(correctAnswer);
 
-
-  const hellow =()=>{
+  const hellow = () => {
     console.log(open);
     Swal.fire({
       title: open,
       showClass: {
-        popup: 'animate__animated animate__fadeInDown'
+        popup: "animate__animated animate__fadeInDown",
       },
       hideClass: {
-        popup: 'animate__animated animate__fadeOutUp'
-      }
-    })
-    // alert(open)
-  }
-
+        popup: "animate__animated animate__fadeOutUp",
+      },
+    });
+  };
 
   return (
     <div className="bg-slate-200 p-6 m-10 w-3/5 mx-auto">
@@ -29,14 +26,13 @@ const AllQuize = ({ all }) => {
         <div>{question}</div>
 
         <div>
-        <i onClick={hellow} class="fa-solid fa-eye" ></i>
+          <i onClick={hellow} class="fa-solid fa-eye"></i>
         </div>
-
       </div>
 
       <div className="grid xxl:grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 md:block gap-5 mt-6">
         {options.map((op) => (
-          <Option key={op} opb={open} all={all} optio={op}></Option>
+          <Option opb={open} all={all} optio={op}></Option>
         ))}
       </div>
     </div>
